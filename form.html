@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap + Swiper Demo</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="img_t">
+                    <img class="logo_t" src="./img/mslogo.png">
+                </div>
+                <a class="navbar-brand" href="#">ORA</a>
+                <small>TRAVEL</small>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./hotels.html">HOTELS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">PAGES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">BLOGS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">PORTFOLIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">SHORTCODES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+            <div class="container">
+                <div class="form_inner">
+                    <h4>Booking Form</h4>
+        <form id="bookingForm" novalidate>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+            <label for="passport">Passport Number</label>
+            <input type="text" id="passport" name="passport" required placeholder="Passport Number" />
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required />
+
+
+            <label for="cnic">CNIC Number</label>
+            <input type="text" id="cnic" name="cnic" required placeholder="11-digit CNIC" maxlength="11" />
+
+            <div id="cnicError" class="error" style="display:none;">CNIC must be exactly 11 digits</div>
+
+            <label for="city">Choose a city in Turkey</label>
+            <select id="city" name="city" required>
+                <option value="" disabled selected>Select a city</option>
+                <option value="Istanbul">Istanbul</option>
+                <option value="Ankara">Ankara</option>
+                <option value="Izmir">Izmir</option>
+                <option value="Antalya">Antalya</option>
+                <option value="Galata Tower">Bursa</option>
+                <option value="Konya">Konya</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
